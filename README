@@ -5,21 +5,28 @@ Environment:
 macOS (development), CLion 2024.2
 Linux (opsys.cs.umsl.edu – final testing environment)
 
+------------------------------------------------------------
+
 How to Compile the Project:
 Type: make
 
 How to Clean the Project Directory:
 Type: make clean
 
+------------------------------------------------------------
+
 How To Run:
-./oss -n x -s x -t x -f logfile.txt
+./oss -n x -s x -t x -i x -f logfile.txt
 
 Command Line Options:
 -n x : Total number of worker processes to launch (minimum 1)
 -s x : Maximum number of concurrent processes allowed (minimum 1)
--t x : Maximum runtime bound for worker processes in seconds
+-t x : Maximum runtime bound for worker processes in seconds (actual runtime is randomized between 1 and t seconds)
+-i x : Interval in simulated seconds between launching new worker processes
 -f x : Log file where OSS output will be written
 -h   : Displays usage information
+
+------------------------------------------------------------
 
 Default Values:
 
@@ -27,6 +34,7 @@ If no arguments are provided:
 n = 1
 s = 1
 t = 1
+i = 0
 
 If certain options are omitted, defaults apply.
 
@@ -35,6 +43,9 @@ Example:
 
 Results in:
 s = 1
+i = 0
+
+------------------------------------------------------------
 
 Program Behavior:
 
@@ -54,9 +65,14 @@ running or terminate.
 
 The oss scheduler sends messages to workers in a round-robin
 fashion and prints the process table every 0.5 seconds of
-simulated time. When all workers terminate, oss prints a summary
-report including the total number of processes launched and the
+simulated time. The -i option controls how much simulated time
+must pass before oss launches another worker process.
+
+When all workers terminate, oss prints a summary report
+including the total number of processes launched and the
 total number of messages sent.
+
+------------------------------------------------------------
 
 Testing SIGINT (Ctrl+C) and SIGALRM (60-Second Timeout):
 
@@ -65,7 +81,9 @@ with large input values so it executes long enough to manually
 interrupt or allow the 60-second alarm to trigger.
 
 Example for manual Ctrl+C test:
+
 ./oss -n 1000 -s 5 -t 5 -f log.txt
+
 Then press Ctrl+C during execution.
 
 Expected behavior:
@@ -74,6 +92,7 @@ Expected behavior:
 - Shared memory and message queues are removed
 
 Example for automatic 60-second timeout test:
+
 ./oss -n 1000 -s 7 -t 40 -f log.txt
 
 Expected behavior:
@@ -83,6 +102,8 @@ Expected behavior:
 - All children are terminated
 - Shared memory and message queues are removed
 
+------------------------------------------------------------
+
 Generative AI Usage: ChatGPT
 
 Prompts Used:
@@ -91,6 +112,7 @@ Prompts Used:
 - “Help confirm signal handling and cleanup logic.”
 
 Summary:
+
 ChatGPT was used as a learning aid to better understand shared
 memory communication, message queue coordination, process
 scheduling logic, and signal handling for cleanup procedures.
@@ -99,4 +121,4 @@ All code was reviewed, modified, tested, and fully understood
 before final submission.
 
 (Links to GPT windows)
-    4760 Operating Systems - https://chatgpt.com/share/69b37ed4-118c-8005-adf4-ba109838e35b
+4760 Operating Systems - https://chatgpt.com/share/69b37ed4-118c-8005-adf4-ba109838e35b
