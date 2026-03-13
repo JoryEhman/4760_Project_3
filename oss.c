@@ -196,23 +196,13 @@ int main(int argc, char *argv[])
 
     while ((opt = getopt(argc, argv, "n:s:t:i:f:")) != -1) {
         switch (opt) {
-            case 'n':
-                n = atoi(optarg);
-                break;
-            case 's':
-                s = atoi(optarg);
-                break;
-            case 't':
-                t = atoi(optarg);
-                break;
-            case 'i':
-                i_value = atof(optarg);
-                break;
-            case 'f':
-                logfile = optarg;
-                break;
+            case 'n': n = atoi(optarg); break;
+            case 's': s = atoi(optarg); break;
+            case 't': t = atoi(optarg); break;
+            case 'i': i_value = atof(optarg); break;
+            case 'f': logfile = optarg; break;
             default:
-                fprintf(stderr, "Usage: %s [-n proc] [-s simul] [-t timelimit] [-i launchInterval] [-f logfile]\n", argv[0]);
+                fprintf(stderr,"Usage: %s [-n proc] [-s simul] [-t timelimit] [-i launchInterval] [-f logfile]\n",argv[0]);
                 return 1;
         }
     }
@@ -228,7 +218,7 @@ int main(int argc, char *argv[])
     for (int i = 0; i < MAX_PROCS; i++)
         clear_pcb(i);
 
-    logfp = fopen(logfile, "w");
+    logfp = fopen(logfile,"w");
     if (!logfp) {
         perror("fopen");
         return 1;
@@ -238,29 +228,15 @@ int main(int argc, char *argv[])
     signal(SIGALRM, cleanup);
     alarm(60);
 
-    key_t shmkey = ftok(".", 1);
-    shmid = shmget(shmkey, sizeof(SimClock), IPC_CREAT | 0666);
-    if (shmid < 0) {
-        perror("shmget");
-        cleanup(0);
-    }
-
-    simClock = (SimClock *)shmat(shmid, NULL, 0);
-    if (simClock == (void *)-1) {
-        perror("shmat");
-        simClock = NULL;
-        cleanup(0);
-    }
+    key_t shmkey = ftok(".",1);
+    shmid = shmget(shmkey,sizeof(SimClock),IPC_CREAT|0666);
+    simClock = (SimClock*)shmat(shmid,NULL,0);
 
     simClock->seconds = 0;
     simClock->nanoseconds = 0;
 
-    key_t msgkey = ftok(".", 2);
-    msqid = msgget(msgkey, IPC_CREAT | 0666);
-    if (msqid < 0) {
-        perror("msgget");
-        cleanup(0);
-    }
+    key_t msgkey = ftok(".",2);
+    msqid = msgget(msgkey,IPC_CREAT|0666);
 
     while (launched < n || running > 0)
     {
@@ -270,23 +246,18 @@ int main(int argc, char *argv[])
         if (half_second_passed())
             print_process_table();
 
-        /* Launch child only if:
-           1. still need to launch more
-           2. under simultaneous limit
-           3. launch interval has passed in SIMULATED time
-        */
         if (launched < n && running < s)
         {
             unsigned long long nowNs = sim_time_ns();
             int canLaunch = 0;
 
-            if (launched == 0) {
-                canLaunch = 1;   /* first child launches immediately */
-            } else if (nowNs - lastLaunchTimeNs >= launchIntervalNs) {
+            if (launched == 0)
                 canLaunch = 1;
-            }
+            else if (nowNs - lastLaunchTimeNs >= launchIntervalNs)
+                canLaunch = 1;
 
-            if (canLaunch) {
+            if (canLaunch)
+            {
                 int slot = find_free_slot();
 
                 if (slot != -1)
@@ -303,20 +274,15 @@ int main(int argc, char *argv[])
                         char sec_str[20];
                         char nano_str[20];
 
-                        sprintf(shmid_str, "%d", shmid);
-                        sprintf(msqid_str, "%d", msqid);
-                        sprintf(sec_str, "%d", randSeconds);
-                        sprintf(nano_str, "%d", randNano);
+                        sprintf(shmid_str,"%d",shmid);
+                        sprintf(msqid_str,"%d",msqid);
+                        sprintf(sec_str,"%d",randSeconds);
+                        sprintf(nano_str,"%d",randNano);
 
-                        execl("./worker", "worker",
-                              shmid_str, msqid_str, sec_str, nano_str, (char *)NULL);
+                        execl("./worker","worker",
+                              shmid_str,msqid_str,sec_str,nano_str,(char*)NULL);
 
                         exit(1);
-                    }
-
-                    if (pid < 0) {
-                        perror("fork");
-                        cleanup(0);
                     }
 
                     PCB *p = &processTable[slot];
@@ -354,33 +320,29 @@ int main(int argc, char *argv[])
             if (!p->occupied)
                 continue;
 
-            memset(&msg, 0, sizeof(msg));
+            memset(&msg,0,sizeof(msg));
             msg.mtype = p->pid;
             msg.intData = 1;
 
-            log_event("OSS: Sending message to child %d at %u:%u\n",
-                      p->pid, simClock->seconds, simClock->nanoseconds);
+            log_event("OSS: Sending message to worker entry %d PID %d at time %u:%u\n",
+                      i, p->pid, simClock->seconds, simClock->nanoseconds);
 
-            if (msgsnd(msqid, &msg, msgsz, 0) == -1) {
-                perror("msgsnd");
-                cleanup(0);
-            }
+            msgsnd(msqid,&msg,msgsz,0);
 
-            if (msgrcv(msqid, &msg, msgsz, getpid(), 0) == -1) {
-                perror("msgrcv");
-                cleanup(0);
-            }
+            msgrcv(msqid,&msg,msgsz,getpid(),0);
 
-            log_event("OSS: Received message from child %d\n", p->pid);
+            log_event("OSS: Receiving message from worker entry %d PID %d at time %u:%u\n",
+                      i, p->pid, simClock->seconds, simClock->nanoseconds);
 
             p->messagesSent++;
             totalMessagesSent++;
 
             if (msg.intData == 0)
             {
-                log_event("OSS: Child %d terminating\n", p->pid);
+                log_event("OSS: Worker entry %d PID %d is planning to terminate\n",
+                          i, p->pid);
 
-                waitpid(p->pid, NULL, 0);
+                waitpid(p->pid,NULL,0);
 
                 clear_pcb(i);
                 running--;
@@ -395,5 +357,4 @@ int main(int argc, char *argv[])
     log_event("Total messages sent: %d\n", totalMessagesSent);
 
     cleanup(0);
-    return 0;
 }
