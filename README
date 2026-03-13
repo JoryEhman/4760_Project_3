@@ -45,6 +45,14 @@ Results in:
 s = 1
 i = 0
 
+Example using launch interval:
+./oss -n 3 -s 2 -t 4 -i 0.6 -f log.txt
+
+Results in:
+At most 2 workers running at the same time, with at least
+0.6 seconds of simulated time passing between launches of
+new worker processes.
+
 ------------------------------------------------------------
 
 Program Behavior:

@@ -91,7 +91,19 @@ static void log_event(const char *fmt, ...)
 
 static void cleanup(int sig)
 {
-    (void)sig;
+    if (sig == SIGINT) {
+        printf("\nOSS: SIGINT detected (Ctrl+C). Cleaning up and terminating all child processes.\n");
+        if (logfp)
+            fprintf(logfp,"\nOSS: SIGINT detected (Ctrl+C). Cleaning up and terminating all child processes.\n");
+    }
+    else if (sig == SIGALRM) {
+        printf("\nOSS: 60-second timeout reached. Cleaning up and terminating all child processes.\n");
+        if (logfp)
+            fprintf(logfp,"\nOSS: 60-second timeout reached. Cleaning up and terminating all child processes.\n");
+    }
+
+    fflush(stdout);
+    if (logfp) fflush(logfp);
 
     for (int i = 0; i < MAX_PROCS; i++) {
         if (processTable[i].occupied)
