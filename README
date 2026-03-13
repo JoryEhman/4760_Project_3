@@ -1,0 +1,25 @@
+Name: Jory Ehman
+Class: CMP SCI 4760
+Project: Project 3
+Date: 2026
+
+Files:
+oss.c
+worker.c
+Makefile
+
+Compilation:
+make
+
+Execution example:
+./oss -n 1 -s 1 -t 1 -f logfile.txt
+
+Description:
+oss launches worker processes and maintains a simulated system clock
+in shared memory. Workers only run when oss sends them a message
+via a message queue. Workers check the shared clock and determine
+when they should terminate based on their assigned runtime.
+
+Output:
+oss writes its output to both the screen and the logfile specified
+with -f. Worker output appears only on the screen.

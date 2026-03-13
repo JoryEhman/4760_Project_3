@@ -1,0 +1,11 @@
+OSS: Sending message to worker 20297 at 0:0
+OSS: Received message from worker 20297
+OSS: Sending message to worker 20297 at 0:250000000
+OSS: Received message from worker 20297
+OSS: Sending message to worker 20297 at 0:500000000
+OSS: Received message from worker 20297
+OSS: Sending message to worker 20297 at 0:750000000
+OSS: Received message from worker 20297
+OSS: Sending message to worker 20297 at 1:0
+OSS: Received message from worker 20297
+OSS: Worker 20297 terminating at 1:0
