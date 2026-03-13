@@ -1,25 +1,102 @@
 Name: Jory Ehman
-Class: CMP SCI 4760
-Project: Project 3
-Date: 2026
+Date: March 12th 2026
 
-Files:
-oss.c
-worker.c
-Makefile
+Environment:
+macOS (development), CLion 2024.2
+Linux (opsys.cs.umsl.edu – final testing environment)
 
-Compilation:
-make
+How to Compile the Project:
+Type: make
 
-Execution example:
-./oss -n 1 -s 1 -t 1 -f logfile.txt
+How to Clean the Project Directory:
+Type: make clean
 
-Description:
-oss launches worker processes and maintains a simulated system clock
-in shared memory. Workers only run when oss sends them a message
-via a message queue. Workers check the shared clock and determine
-when they should terminate based on their assigned runtime.
+How To Run:
+./oss -n x -s x -t x -f logfile.txt
 
-Output:
-oss writes its output to both the screen and the logfile specified
-with -f. Worker output appears only on the screen.
+Command Line Options:
+-n x : Total number of worker processes to launch (minimum 1)
+-s x : Maximum number of concurrent processes allowed (minimum 1)
+-t x : Maximum runtime bound for worker processes in seconds
+-f x : Log file where OSS output will be written
+-h   : Displays usage information
+
+Default Values:
+
+If no arguments are provided:
+n = 1
+s = 1
+t = 1
+
+If certain options are omitted, defaults apply.
+
+Example:
+./oss -n 4 -t 3 -f log.txt
+
+Results in:
+s = 1
+
+Program Behavior:
+
+This project simulates a simple operating system scheduler using
+shared memory and message queues.
+
+The oss program maintains a simulated system clock and launches
+worker processes using fork() and exec(). A process table
+containing Process Control Blocks (PCB) is used to track all
+active worker processes.
+
+Workers attach to the shared memory clock and only run when
+they receive a message from oss. Each worker checks the system
+clock, determines if its assigned runtime has elapsed, and
+sends a message back to oss indicating whether it will continue
+running or terminate.
+
+The oss scheduler sends messages to workers in a round-robin
+fashion and prints the process table every 0.5 seconds of
+simulated time. When all workers terminate, oss prints a summary
+report including the total number of processes launched and the
+total number of messages sent.
+
+Testing SIGINT (Ctrl+C) and SIGALRM (60-Second Timeout):
+
+To test signal handling and cleanup behavior, run the program
+with large input values so it executes long enough to manually
+interrupt or allow the 60-second alarm to trigger.
+
+Example for manual Ctrl+C test:
+./oss -n 1000 -s 5 -t 5 -f log.txt
+Then press Ctrl+C during execution.
+
+Expected behavior:
+- OSS prints the SIGINT cleanup message
+- All active child processes are terminated
+- Shared memory and message queues are removed
+
+Example for automatic 60-second timeout test:
+./oss -n 1000 -s 7 -t 40 -f log.txt
+
+Expected behavior:
+- Program runs until 60 seconds of real time
+- Alarm signal triggers
+- OSS prints a cleanup message
+- All children are terminated
+- Shared memory and message queues are removed
+
+Generative AI Usage: ChatGPT
+
+Prompts Used:
+- “Explain how shared memory and message queues coordinate processes.”
+- “Verify round-robin scheduling behavior in a simulated OS project.”
+- “Help confirm signal handling and cleanup logic.”
+
+Summary:
+ChatGPT was used as a learning aid to better understand shared
+memory communication, message queue coordination, process
+scheduling logic, and signal handling for cleanup procedures.
+
+All code was reviewed, modified, tested, and fully understood
+before final submission.
+
+(Links to GPT windows)
+    4760 Operating Systems - https://chatgpt.com/share/69b37ed4-118c-8005-adf4-ba109838e35b

@@ -15,20 +15,30 @@ typedef struct {
 
 typedef struct msgbuffer {
     long mtype;
-    char strData[100];
     int intData;
 } msgbuffer;
 
 int main(int argc,char *argv[])
 {
+    if(argc != 5){
+        fprintf(stderr,"Usage: worker shmid msqid runSeconds runNanoseconds\n");
+        return 1;
+    }
+
     int shmid = atoi(argv[1]);
     int msqid = atoi(argv[2]);
-    int runtime = atoi(argv[3]);
+    unsigned int runSeconds = atoi(argv[3]);
+    unsigned int runNano = atoi(argv[4]);
 
     SimClock *clock = (SimClock*) shmat(shmid,NULL,0);
 
-    unsigned int end_sec = clock->seconds + runtime;
-    unsigned int end_ns = clock->nanoseconds;
+    unsigned int end_sec = clock->seconds + runSeconds;
+    unsigned int end_ns = clock->nanoseconds + runNano;
+
+    while(end_ns >= BILLION){
+        end_sec++;
+        end_ns -= BILLION;
+    }
 
     msgbuffer msg;
 

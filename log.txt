@@ -1,11 +1,827 @@
-OSS: Sending message to worker 20297 at 0:0
-OSS: Received message from worker 20297
-OSS: Sending message to worker 20297 at 0:250000000
-OSS: Received message from worker 20297
-OSS: Sending message to worker 20297 at 0:500000000
-OSS: Received message from worker 20297
-OSS: Sending message to worker 20297 at 0:750000000
-OSS: Received message from worker 20297
-OSS: Sending message to worker 20297 at 1:0
-OSS: Received message from worker 20297
-OSS: Worker 20297 terminating at 1:0
+
+OSS PID:21590 SysClockS:0 SysClockNano:0
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21591    0          0            1          934552077    0         
+1     0        0        0          0            0          0            0         
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21591 at 0:0
+OSS: Received message from child 21591
+OSS: Sending message to child 21591 at 0:250000000
+OSS: Received message from child 21591
+
+OSS PID:21590 SysClockS:0 SysClockNano:500000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21591    0          0            1          934552077    2         
+1     0        0        0          0            0          0            0         
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+
+OSS PID:21590 SysClockS:0 SysClockNano:500000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21591    0          0            1          934552077    2         
+1     1        21593    0          500000000    6          50503626     0         
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21591 at 0:500000000
+OSS: Received message from child 21591
+OSS: Sending message to child 21593 at 0:500000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21591 at 0:625000000
+OSS: Received message from child 21591
+OSS: Sending message to child 21593 at 0:625000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21591 at 0:750000000
+OSS: Received message from child 21591
+OSS: Sending message to child 21593 at 0:750000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21591 at 0:875000000
+OSS: Received message from child 21591
+OSS: Sending message to child 21593 at 0:875000000
+OSS: Received message from child 21593
+
+OSS PID:21590 SysClockS:1 SysClockNano:0
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21591    0          0            1          934552077    6         
+1     1        21593    0          500000000    6          50503626     4         
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21591 at 1:0
+OSS: Received message from child 21591
+OSS: Sending message to child 21593 at 1:0
+OSS: Received message from child 21593
+OSS: Sending message to child 21591 at 1:125000000
+OSS: Received message from child 21591
+OSS: Sending message to child 21593 at 1:125000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21591 at 1:250000000
+OSS: Received message from child 21591
+OSS: Sending message to child 21593 at 1:250000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21591 at 1:375000000
+OSS: Received message from child 21591
+OSS: Sending message to child 21593 at 1:375000000
+OSS: Received message from child 21593
+
+OSS PID:21590 SysClockS:1 SysClockNano:500000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21591    0          0            1          934552077    10        
+1     1        21593    0          500000000    6          50503626     8         
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21591 at 1:500000000
+OSS: Received message from child 21591
+OSS: Sending message to child 21593 at 1:500000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21591 at 1:625000000
+OSS: Received message from child 21591
+OSS: Sending message to child 21593 at 1:625000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21591 at 1:750000000
+OSS: Received message from child 21591
+OSS: Sending message to child 21593 at 1:750000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21591 at 1:875000000
+OSS: Received message from child 21591
+OSS: Sending message to child 21593 at 1:875000000
+OSS: Received message from child 21593
+
+OSS PID:21590 SysClockS:2 SysClockNano:0
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21591    0          0            1          934552077    14        
+1     1        21593    0          500000000    6          50503626     12        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21591 at 2:0
+OSS: Received message from child 21591
+OSS: Child 21591 terminating
+
+OSS PID:21590 SysClockS:2 SysClockNano:250000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21594    2          250000000    4          956163111    0         
+1     1        21593    0          500000000    6          50503626     12        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21594 at 2:250000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 2:250000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 2:375000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 2:375000000
+OSS: Received message from child 21593
+
+OSS PID:21590 SysClockS:2 SysClockNano:500000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21594    2          250000000    4          956163111    2         
+1     1        21593    0          500000000    6          50503626     14        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21594 at 2:500000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 2:500000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 2:625000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 2:625000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 2:750000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 2:750000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 2:875000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 2:875000000
+OSS: Received message from child 21593
+
+OSS PID:21590 SysClockS:3 SysClockNano:0
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21594    2          250000000    4          956163111    6         
+1     1        21593    0          500000000    6          50503626     18        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21594 at 3:0
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 3:0
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 3:125000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 3:125000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 3:250000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 3:250000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 3:375000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 3:375000000
+OSS: Received message from child 21593
+
+OSS PID:21590 SysClockS:3 SysClockNano:500000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21594    2          250000000    4          956163111    10        
+1     1        21593    0          500000000    6          50503626     22        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21594 at 3:500000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 3:500000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 3:625000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 3:625000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 3:750000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 3:750000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 3:875000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 3:875000000
+OSS: Received message from child 21593
+
+OSS PID:21590 SysClockS:4 SysClockNano:0
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21594    2          250000000    4          956163111    14        
+1     1        21593    0          500000000    6          50503626     26        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21594 at 4:0
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 4:0
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 4:125000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 4:125000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 4:250000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 4:250000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 4:375000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 4:375000000
+OSS: Received message from child 21593
+
+OSS PID:21590 SysClockS:4 SysClockNano:500000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21594    2          250000000    4          956163111    18        
+1     1        21593    0          500000000    6          50503626     30        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21594 at 4:500000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 4:500000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 4:625000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 4:625000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 4:750000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 4:750000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21594 at 4:875000000
+OSS: Received message from child 21594
+OSS: Sending message to child 21593 at 4:875000000
+OSS: Received message from child 21593
+
+OSS PID:21590 SysClockS:5 SysClockNano:0
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21594    2          250000000    4          956163111    22        
+1     1        21593    0          500000000    6          50503626     34        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21594 at 5:0
+OSS: Received message from child 21594
+OSS: Child 21594 terminating
+
+OSS PID:21590 SysClockS:5 SysClockNano:250000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21596    5          250000000    6          730125588    0         
+1     1        21593    0          500000000    6          50503626     34        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21596 at 5:250000000
+OSS: Received message from child 21596
+OSS: Sending message to child 21593 at 5:250000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21596 at 5:375000000
+OSS: Received message from child 21596
+OSS: Sending message to child 21593 at 5:375000000
+OSS: Received message from child 21593
+
+OSS PID:21590 SysClockS:5 SysClockNano:500000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21596    5          250000000    6          730125588    2         
+1     1        21593    0          500000000    6          50503626     36        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21596 at 5:500000000
+OSS: Received message from child 21596
+OSS: Sending message to child 21593 at 5:500000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21596 at 5:625000000
+OSS: Received message from child 21596
+OSS: Sending message to child 21593 at 5:625000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21596 at 5:750000000
+OSS: Received message from child 21596
+OSS: Sending message to child 21593 at 5:750000000
+OSS: Received message from child 21593
+OSS: Sending message to child 21596 at 5:875000000
+OSS: Received message from child 21596
+OSS: Sending message to child 21593 at 5:875000000
+OSS: Received message from child 21593
+
+OSS PID:21590 SysClockS:6 SysClockNano:0
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21596    5          250000000    6          730125588    6         
+1     1        21593    0          500000000    6          50503626     40        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21596 at 6:0
+OSS: Received message from child 21596
+OSS: Sending message to child 21593 at 6:0
+OSS: Received message from child 21593
+OSS: Sending message to child 21596 at 6:125000000
+OSS: Received message from child 21596
+OSS: Sending message to child 21593 at 6:125000000
+OSS: Received message from child 21593
+OSS: Child 21593 terminating
+
+OSS PID:21590 SysClockS:6 SysClockNano:375000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21596    5          250000000    6          730125588    8         
+1     1        21597    6          375000000    10         417140850    0         
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21596 at 6:375000000
+OSS: Received message from child 21596
+OSS: Sending message to child 21597 at 6:375000000
+OSS: Received message from child 21597
+
+OSS PID:21590 SysClockS:6 SysClockNano:500000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     1        21596    5          250000000    6          730125588    9         
+1     1        21597    6          375000000    10         417140850    1         
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21596 at 6:500000000
+OSS: Received message from child 21596
+OSS: Sending message to child 21597 at 6:500000000
+OSS: Received message from child 21597
+OSS: Sending message to child 21596 at 6:625000000
+OSS: Received message from child 21596
+OSS: Sending message to child 21597 at 6:625000000
+OSS: Received message from child 21597
+OSS: Sending message to child 21596 at 6:750000000
+OSS: Received message from child 21596
+OSS: Child 21596 terminating
+
+OSS PID:21590 SysClockS:7 SysClockNano:0
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     0        0        0          0            0          0            0         
+1     1        21597    6          375000000    10         417140850    3         
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21597 at 7:0
+OSS: Received message from child 21597
+OSS: Sending message to child 21597 at 7:250000000
+OSS: Received message from child 21597
+
+OSS PID:21590 SysClockS:7 SysClockNano:500000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     0        0        0          0            0          0            0         
+1     1        21597    6          375000000    10         417140850    5         
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21597 at 7:500000000
+OSS: Received message from child 21597
+OSS: Sending message to child 21597 at 7:750000000
+OSS: Received message from child 21597
+
+OSS PID:21590 SysClockS:8 SysClockNano:0
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     0        0        0          0            0          0            0         
+1     1        21597    6          375000000    10         417140850    7         
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21597 at 8:0
+OSS: Received message from child 21597
+OSS: Sending message to child 21597 at 8:250000000
+OSS: Received message from child 21597
+
+OSS PID:21590 SysClockS:8 SysClockNano:500000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     0        0        0          0            0          0            0         
+1     1        21597    6          375000000    10         417140850    9         
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21597 at 8:500000000
+OSS: Received message from child 21597
+OSS: Sending message to child 21597 at 8:750000000
+OSS: Received message from child 21597
+
+OSS PID:21590 SysClockS:9 SysClockNano:0
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     0        0        0          0            0          0            0         
+1     1        21597    6          375000000    10         417140850    11        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21597 at 9:0
+OSS: Received message from child 21597
+OSS: Sending message to child 21597 at 9:250000000
+OSS: Received message from child 21597
+
+OSS PID:21590 SysClockS:9 SysClockNano:500000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     0        0        0          0            0          0            0         
+1     1        21597    6          375000000    10         417140850    13        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21597 at 9:500000000
+OSS: Received message from child 21597
+OSS: Sending message to child 21597 at 9:750000000
+OSS: Received message from child 21597
+
+OSS PID:21590 SysClockS:10 SysClockNano:0
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     0        0        0          0            0          0            0         
+1     1        21597    6          375000000    10         417140850    15        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21597 at 10:0
+OSS: Received message from child 21597
+OSS: Sending message to child 21597 at 10:250000000
+OSS: Received message from child 21597
+
+OSS PID:21590 SysClockS:10 SysClockNano:500000000
+Entry Occupied PID      StartS     StartN       EndS       EndN         MsgSent   
+0     0        0        0          0            0          0            0         
+1     1        21597    6          375000000    10         417140850    17        
+2     0        0        0          0            0          0            0         
+3     0        0        0          0            0          0            0         
+4     0        0        0          0            0          0            0         
+5     0        0        0          0            0          0            0         
+6     0        0        0          0            0          0            0         
+7     0        0        0          0            0          0            0         
+8     0        0        0          0            0          0            0         
+9     0        0        0          0            0          0            0         
+10    0        0        0          0            0          0            0         
+11    0        0        0          0            0          0            0         
+12    0        0        0          0            0          0            0         
+13    0        0        0          0            0          0            0         
+14    0        0        0          0            0          0            0         
+15    0        0        0          0            0          0            0         
+16    0        0        0          0            0          0            0         
+17    0        0        0          0            0          0            0         
+18    0        0        0          0            0          0            0         
+19    0        0        0          0            0          0            0         
+OSS: Sending message to child 21597 at 10:500000000
+OSS: Received message from child 21597
+OSS: Child 21597 terminating
+
+OSS Summary Report
+Total processes launched: 5
+Total messages sent: 110
